@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mark Bulaong</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/90aa26e44c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">What I can do</a></li>
+                <li><a href="#portfolio">Past Projects</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Creatives Designer</p>
+            <h1>Good day! I'm <span>Mark</span><br> from De La Salle University</h1>
+        </div>
+    </div>
+<!----------aboutme--------->
+
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/test.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-me">Hello! I'm Mark, a Manufacturing Engineering student with 1 year of coding 
+                    experience due to my old course being Computer Engineering. From Computer Engineering 
+                    I was able to learn different languages such as; Java, Python, HTML, CSS, and I mainly use 
+                    Visual Studio Code to code my projects. I am currently the Assistant Vice President for Creatives 
+                    and Publicities for Outdoor Club and I've held that position for 2 years. I have done projects before 
+                    such as a inventory system for a friend's company.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('extracurriculars')">Extracurriculars</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web interfaces for company</li>
+                            <li><span>Database Management</span><br>Knowledge with database management</li>
+                            <li><span>Creatives and Publicities</span><br>Making Publications and Editing Videos</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="extracurriculars">
+                        <ul>
+                            <li><span>NCAA Athlete</span><br>La Salle Green Hills: Track & Field 2019</li>
+                            <li><span>Student-Leader</span><br>Assistant Vice President for Creatives and Publicties: Outdoor Club 2020 - Onwards</li>
+                            <li><span>Thesis Paper</span><br>Presented in IEEE'2019 Integrated STEM Education Conference (ISEC). In Princeton, New Jersey
+                                Research paper was about recycling biowaste into a sustainable alternative to chemical fertilizers</li>
+                                <a href="https://ieeexplore.ieee.org/document/8882012">Link to research paper</a>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Primary Eduction</span><br>La Salle Green Hills: 2007 - 2013</li>
+                            <li><span>Secondary Eduction</span><br>La Salle Green Hills: 2013 - 2017</li>
+                            <li><span>Junior and Senior High School</span><br>La Salle Green Hills: 2017 - 2019</li>
+                            <li><span>College</span><br>De La Salle University: BS-MEMR, 2019 - Ongoing</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----what I can do-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">What I can do</h1>
+        <div class="services-list">
+            <div>
+                <img src="./images/cnp.png">
+                <h2>Creatives and Pubilicities</h2>
+                <p>Worked on multiple pubs for DLSU outdoor club</p>
+            </div>
+            <div>
+                <img src="./images/data.png">
+                <h2>Database Management</h2>
+                <p>Has worked on a database inventory system for a warehouse company</p>
+            </div>
+            <div>
+                <img src="./images/ux.png">
+                <h2>UI/UX</h2>
+                <p>Mainly focused on designing the user interface for past projects</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------previousworks-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Previous Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/oc1.png">
+                <div class="layer">
+                    <h3>Announcment of Officers</h3>
+                    <p>Announcement of new officers for DLSU outdoor club</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/oc2.png">
+                <div class="layer">
+                    <h3>Outdoor Club ARW Frame</h3>
+                    <p>DP Frame for ARW 2021</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/oc3.png">
+                <div class="layer">
+                    <h3>Cubs Training Program</h3>
+                    <p>Pub for the officer training program</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/oc4.png">
+                <div class="layer">
+                    <h3>Recruitment of Officers</h3>
+                    <p>Pub for the recruitment of officers</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+</body>
+</html>
